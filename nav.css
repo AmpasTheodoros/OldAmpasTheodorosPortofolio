@@ -69,6 +69,11 @@ body[data-nav="true"] > nav > #nav-links {
     object-fit: cover;
 }
 
+#nav-links > .nav-link > .nav-link-image {
+    max-width: 400px;
+    height: auto;
+}
+
 #nav-toggle {
     height: 5rem;
     width: 5rem;
@@ -121,4 +126,89 @@ body:not([data-nav="true"]) > #nav-toggle:hover > .open {
 body[data-nav="true"] > #nav-toggle > .close {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+}
+
+@media (max-width: 600px) {
+    #nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav-links > .nav-link > .nav-link-label {
+        font-size: 1rem;
+    }
+    #nav-links > .nav-link > .nav-link-image {
+        display: block;
+        margin: 0 auto 1rem;
+    }
+    nav {
+        overflow-y: scroll;
+    }
+
+    main > .shape {
+        position: static;
+    }
+}
+
+@media (max-width: 800px) {
+    #nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav-links > .nav-link > .nav-link-label {
+        font-size: 1rem;
+    }
+    #nav-links > .nav-link > .nav-link-image {
+        display: block;
+        margin: 0 auto 1rem;
+    }
+    nav {
+        overflow-y: scroll;
+    }
+
+    main > .shape {
+        position: static;
+    }
+}
+
+@media (max-width: 400px) {
+    #nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav-links > .nav-link > .nav-link-label {
+        font-size: 1rem;
+    }
+    #nav-links > .nav-link > .nav-link-image {
+        display: block;
+        margin: 0 auto 1rem;
+    }
+    nav {
+        overflow-y: scroll;
+    }
+
+    main > .shape {
+        position: static;
+    }
+}
+
+@media (max-width: 412px) {
+    #nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav-links > .nav-link > .nav-link-label {
+        font-size: 0.8rem;
+    }
+
+    #nav-links > .nav-link > .nav-link-image {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    nav {
+        overflow-y: scroll;
+    }
+
+    main > .shape {
+        position: static;
+    }
 }
